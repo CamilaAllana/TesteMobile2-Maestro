@@ -1,0 +1,41 @@
+# Identificar a App
+appId: com.android.chrome
+---
+
+# Iniciar a App
+- launchApp
+
+# Clicar na barra de endereços e navegar até o site
+- tapOn: "Search or type URL"
+- inputText: https://herziopinto.github.io/lista-de-tarefas/
+- tapOn: "Back"
+- tapOn:
+    point: "51%,14%"
+
+# Adicionando tarefas
+- tapOn:
+    id: "inputTask"
+- inputText: "Lavar a roupa"
+- tapOn:
+    point: "92%,91%"
+
+- tapOn:
+    id: "inputTask"
+- inputText: "Fazer compras"
+- tapOn:
+    point: "92%,91%"
+
+- tapOn:
+    id: "inputTask"
+- inputText: "Estudar para a prova"
+- tapOn:
+    point: "92%,91%"
+
+- tapOn: "Back"
+
+# Remover tarefa
+- tapOn:
+    point: "50%,43%"
+- tapOn: "x"
+
+- takeScreenshot: MainScreen
