@@ -1,0 +1,29 @@
+# Identificar a App
+appId: com.android.contacts
+---
+# Iniciar a App
+- launchApp
+
+# Adicionar novo contato
+- tapOn:
+    id: "com.android.contacts:id/floating_action_button"
+
+- tapOn: "First name"
+- inputText: "Jon"
+
+- tapOn: "Last name"
+- inputText: "Snow"
+
+- tapOn: "Phone"
+- inputText: "123456789"
+
+- tapOn: "Back"
+- tapOn: "SAVE"
+- takeScreenshot: MainScreen
+
+# Deletar contato
+- tapOn: "More options"
+- tapOn:
+    point: "74%,12%"
+- tapOn: "DELETE"
+- takeScreenshot: MainScreen
